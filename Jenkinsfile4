@@ -1,8 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage("Build"){
-      sh "python3 manage.py"
+    stage('Build') {
+      steps {
+        sh 'python3 manage.py'
+      }
     }
-  }
+}
 }
